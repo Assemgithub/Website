@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assemay's  personal website</title>
+  <link rel= "stylesheet" type = "text/css" href = "css/style.css" />
+  <link rel="icon" href="css/favicon.ico">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item "><a class="nav-link" href="index.html">🏠 Home </a></li>
+  <li class="nav-item "><a class="nav-link"  href="Aboutme.html"> 💁🏻‍♀️ About me</a></li>
+  <li class="nav-item active"> <a class="nav-link"  href="Education.html"> 🎓 Education and achievements</a></li>
+  <li style="float:right"><a class="nav-link"  href="Contact.html">📞 Contact</a></li>
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="div11"><p style="color:white;font-weight:bold;font-size:18px;margin-left:12px;">
+    <li type="square">Level of education</li>
+    <dd>Secondary Education</dd>
+    <li type="square">Official name of school / university</li>
+    <dd>Nazarbayev Intellectual
+  School of Chemistry and
+  Biology
+  </dd>
+  <li type="square">Programme name</li>
+  <dd>National program and NIS
+  program</dd>
+  <li type="square">Scienfic discipline</li>
+  <dd>Physics and Mathemacs,
+  addional Geography</dd>
+  <li type="square">Mode of study</li>
+  <dd>Full degree studies</dd></p></p>
+<br style="clear:both" /></div>
+<div class="div22">
+    <p align="center" ><img src="a.jpg" alt="University" width="450" height="250" /></p></div>
+<div class="div33">
+<p style="color:white;font-weight:bold;font-size:18px;margin-left:12px; ">
+  <li type="circle" >Level of education</li>
+  <dd>Bachelor's Degree</dd>
+  <li type="circle">Official name of school / university</li>
+  <dd>Astana IT University
+</dd>
+<li type="circle">Programme name</li>
+<dd>Software engineering</dd>
+<li type="circle">Scienfic discipline</li>
+<dd>Physics and Mathemacs</dd>
+<li type="circle">Mode of study</li>
+<dd>Full degree studies</dd></p>
+<br style="clear:both" />
+</div>
+ <div class="div44">
+  <p align="center" ><img src="university.jpg" alt="University" width="500" height="250"/></p>
+</div>
+</div>
+
+<h2><i style="center">Achievements</i></h2>
+<hr>
+<table align="center" border="3" width="1000" height="500" padding:"10px">
+  <tr>
+    <td colspan="1"><img src="1.png" alt="Diploma" width="500" height="250"></td>
+    <td><img src="2.png" alt="Diploma" width="500" height="250"></td>
+    </tr>
+    <tr>
+      <td ><img src="3.png" alt="Diploma" width="500" height="250"></td>
+      <td><img src="4.png" alt="Diploma" width="500" height="250"></td>
+      </tr>
+  </table>
+  <hr>
+  <div class="other">
+  	<br>
+  <h1 style="font-family: 'Brush Script MT', cursive;">Answer questions and know more about me😘</h1>
+  <h3 >What foreign universities did I get a grant from?</h3><br>
+  <form >
+  <input type="radio" name="choice" value="RMIT University"> RMIT University
+  <input type="radio" name="choice" value="Imperial College London"> Imperial College London
+  <input type="radio" name="choice" value="Szeged and  Budapest"> Szeged and  Budapest
+  <input type="radio" name="choice" value="Obuda and University of Debrecen"> Obuda and University of Debrecen
+  </form>
+  <button class="btn"  onclick="submitAnswer()">Submit Answer</button>
+
+  <script>
+  var submitAnswer = function() {
+  var radios = document.getElementsByName('choice');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value;
+         break;
+       }
+  }
+
+  if (val == "" ) {
+    alert('please select choice answer');
+  } else if ( val == "Obuda and University of Debrecen" ) {
+    alert('Answer is correct !');
+  } else {
+    alert('Answer is wrong');
+  }
+  };
+  </script>
+  </div>
+  <table width="100%">
+    <tr>
+       <td colspan = "2" bgcolor = "#b5dcb3">
+          <center style="margin-bottom:25px; margin-top:25px">
+             Copyright © 2007 Karatokacheva0308@gmail.com
+          </center>
+       </td>
+    </tr>
+  </table>
+  <br>
+</body>
+</html>
